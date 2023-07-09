@@ -1,4 +1,3 @@
-import { useState } from "react"
 import RadioButton from "./radio-button"
 
 export type Theme = "light" | "dark"

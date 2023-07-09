@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export default function RadioButton({
     label,
     value,
@@ -9,8 +7,9 @@ export default function RadioButton({
     value: boolean
     onChange: () => void
 }): JSX.Element {
-    return <label>
-        <input type="radio" checked={value} onChange={onChange}/>
+    return <label className="cursor-pointer">
+        <input type="radio" checked={value} onChange={onChange} className="hidden"/>
+        <span className={`h-4 w-4 inline-block transition mr-1 border hover:bg-slate-800 dark:hover:bg-gray-100 ${value ? "bg-slate-900 dark:bg-white" : ""}`}/>
         {label}
     </label>
 }
