@@ -18,15 +18,15 @@ export default function LayoutWrap({
     return <body className={`${inter.className} ${theme === "dark" ? "dark" : ""}`}>
     <div className={`flex w-screen h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white`}>
       <ThemeSelect 
-        className='absolute -left-10 bottom-24' 
+        className='absolute -left-12 bottom-24' 
         selectedTheme={theme} 
         onChange={setTheme}/>
-      <div className='w-full m-10 px-2 sm:px-10 border-l-2 sm:flex'>
+      <div className='w-full mx-10 my-8 pl-4 sm:pl-8 border-l-2 sm:flex'>
         <header>
           <Header className='pb-3'/>
           <Navigation theme={theme}/>
         </header>
-        <main className='ml-24 w-1/2 sm:grid sm:content-center'>
+        <main className='ml-24 w-1/2 grid content-center'>
           {children}
         </main>
       </div>
