@@ -30,12 +30,12 @@ export default function RootLayout({
               className='absolute -left-10 bottom-24' 
               selectedTheme={theme} 
               onChange={setTheme}/>
-            <div className='w-full m-10 px-10 border-l-2 flex'>
+            <div className='w-full m-10 px-2 sm:px-10 border-l-2 sm:flex'>
               <header>
-                <Header/>
+                <Header className='pb-3'/>
                 <Navigation/>
               </header>
-              <main>
+              <main className='ml-24 w-1/2 sm:grid sm:content-center'>
                 {children}
               </main>
             </div>

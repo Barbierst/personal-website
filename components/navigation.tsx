@@ -20,6 +20,6 @@ function NavigationItem({
 }): JSX.Element {
     const pathname = usePathname()
     return <li>
-        {pathname === href ? "- " : ""}<Link href={href}>{text}</Link>
+        <Link className={pathname === href ? "pl-4" : ""} href={href}>{text}</Link>
     </li>
 }
