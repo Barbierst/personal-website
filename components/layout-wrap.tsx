@@ -13,7 +13,7 @@ export default function LayoutWrap({
   }: {
     children: React.ReactNode
   }): JSX.Element {
-    const [theme, setTheme] = useState<Theme>("light")
+    const [theme, setTheme] = useState<Theme>("dark")
 
     return <body className={`${inter.className} ${theme === "dark" ? "dark" : ""}`}>
     <div className={`flex w-screen h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white`}>
