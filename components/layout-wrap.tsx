@@ -26,7 +26,7 @@ export default function LayoutWrap({
           <Header className='pb-3'/>
           <Navigation theme={theme}/>
         </header>
-        <main className='ml-24 w-1/2 grid content-center'>
+        <main className='mt-12 sm:mt-0 sm:ml-24 sm:w-1/2 grid content-center justify-center'>
           {children}
         </main>
       </div>
