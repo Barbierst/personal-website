@@ -16,7 +16,7 @@ export default function LayoutWrap({
     const [theme, setTheme] = useState<Theme>("dark")
 
     return <body className={`${inter.className} ${theme === "dark" ? "dark" : ""}`}>
-    <div className={`flex w-screen h-full sm:h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white`}>
+    <div className='flex w-screen min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white'>
       <ThemeSelect 
         className='fixed -left-12 bottom-24' 
         selectedTheme={theme} 
@@ -26,7 +26,7 @@ export default function LayoutWrap({
           <Header className='pb-3'/>
           <Navigation theme={theme}/>
         </header>
-        <main className='mt-12 sm:mt-0 sm:ml-24 sm:w-1/2 grid content-center justify-center'>
+        <main className='mt-12 sm:mt-0 sm:ml-24 sm:w-1/2 grid content-center justify-center overflow-scroll'>
           {children}
         </main>
       </div>
