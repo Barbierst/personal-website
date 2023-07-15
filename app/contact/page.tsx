@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export default function Contact(): JSX.Element {
     const socialLinks: SocialLinkProps[] = [
-        {icon: faEnvelope, text: "tim.barbiers@gmail.com", href: "mailto:tim.barbiers@gmail.com"},
+        {icon: faEnvelope, text: "info@timbarbiers.nl", href: "mailto:info@timbarbiers.nl"},
         {icon: faLinkedin, text: "linkedin.com/in/tim-barbiers", href: "https://www.linkedin.com/in/tim-barbiers/", newTab: true},
         {icon: faGithub, text: "github.com/Barbierst", href: "https://github.com/Barbierst", newTab: true}
     ] 
