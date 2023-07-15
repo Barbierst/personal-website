@@ -16,7 +16,7 @@ export default function LayoutWrap({
     const [theme, setTheme] = useState<Theme>("dark")
 
     return <body className={`${inter.className} ${theme === "dark" ? "dark" : ""}`}>
-    <div className={`flex w-screen h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white`}>
+    <div className={`flex w-screen h-full sm:h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white`}>
       <ThemeSelect 
         className='absolute -left-12 bottom-24' 
         selectedTheme={theme} 
