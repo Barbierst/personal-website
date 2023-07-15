@@ -11,7 +11,7 @@ export default function Contact(): JSX.Element {
     
     return <>
         {socialLinks.map((socialLink) => 
-            <SocialLink {...socialLink}/>
+            <SocialLink key={socialLink.href} {...socialLink}/>
         )}
     </>
 }
