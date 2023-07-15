@@ -26,7 +26,7 @@ export default function LayoutWrap({
           <Header className='pb-3'/>
           <Navigation theme={theme}/>
         </header>
-        <main className='mt-12 sm:mt-0 sm:-ml-24  w-full flex sm:justify-center items-center overflow-scroll'>
+        <main className='mt-12 sm:mt-0 w-full sm:w-3/4 flex sm:justify-center items-center overflow-scroll'>
           <div className="sm:w-1/3">
             {children}
           </div>
