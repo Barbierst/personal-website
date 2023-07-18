@@ -21,13 +21,13 @@ export default function LayoutWrap({
         className='fixed -left-12 bottom-24' 
         selectedTheme={theme} 
         onChange={setTheme}/>
-      <div className='w-full mx-10 my-8 pl-4 sm:pl-8 border-l-2 sm:flex'>
+      <div className='w-full mx-10 my-8 pl-4 lg:pl-8 border-l-2 lg:flex'>
         <header>
           <Header className='pb-3'/>
           <Navigation theme={theme}/>
         </header>
-        <main className='mt-12 sm:mt-0 w-full sm:w-3/4 flex sm:justify-center items-center overflow-scroll'>
-          <div className="sm:w-1/3">
+        <main className='mt-12 lg:mt-0 w-full sm:w-3/4 flex lg:justify-center items-center overflow-scroll'>
+          <div className="lg:w-1/3">
             {children}
           </div>
         </main>
