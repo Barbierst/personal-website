@@ -1,7 +1,7 @@
 export default function Experience(): JSX.Element {
     const experiences: Experience[] = [
         {employer: "Sandwave.io", role: "Software Engineer", start: "october 2021", end: "present"},
-        {employer: "Maxilia", role: "Software Engineer", start: "november 2021", end: "september 2021"},
+        {employer: "Maxilia", role: "Software Engineer", start: "november 2020", end: "september 2021"},
         {employer: "Bttr", role: "Software Engineer", start: "september 2019", end: "october 2020"},
         {employer: "Sandd", role: "Marketing Intelligence Analist", start: "febraury 2019", end: "august 2019"},
         {employer: "Euroforum", role: "Online Marketeer", start: "march 2017", end: "february 2019"}
