@@ -1,3 +1,5 @@
+import ExpandButton from "@/components/expand-button"
+
 export default function Experience(): JSX.Element {
     const experiences: Experience[] = [
         {employer: "Sandwave.io", role: "Software Engineer", start: "october 2021", end: "present"},
@@ -30,6 +32,7 @@ function ExperienceBlock({
     return <li className="mb-6 pb-4 text-xs border-b-2">
         <p className="text-base">{employer} | {role}</p>
         <p>{start} - {end}</p>
+        <ExpandButton/>
         {description && <p className="text-sm pt-2 text-slate-700 dark:text-gray-400">{description}</p>}
     </li>
 }

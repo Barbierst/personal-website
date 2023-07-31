@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Theme } from "./theme-select"
+import { Theme } from "../modules/theme/theme-select"
 
 export default function Navigation({theme}: {theme: Theme}): JSX.Element {
     return <nav>
