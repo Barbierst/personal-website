@@ -31,8 +31,10 @@ function ExperienceBlock({
 }: Experience): JSX.Element {
     return <li className="mb-6 pb-4 text-xs border-b-2">
         <p className="text-base">{employer} | {role}</p>
-        <p>{start} - {end}</p>
-        <ExpandButton/>
+        <span className="flex justify-between">
+            <p>{start} - {end}</p>
+            <ExpandButton/>
+        </span>
         {description && <p className="text-sm pt-2 text-slate-700 dark:text-gray-400">{description}</p>}
     </li>
 }

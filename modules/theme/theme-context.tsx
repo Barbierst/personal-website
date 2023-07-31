@@ -1,3 +1,5 @@
+'use client'
+
 import { Dispatch, ReactElement, SetStateAction, createContext, useContext, useState } from "react"
 
 export type Theme = "light" | "dark"
