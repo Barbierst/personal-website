@@ -2,7 +2,7 @@
 
 import { Roboto_Mono } from "next/font/google"
 import Header from "./header"
-import Navigation from "./navigation"
+import Navigation from "./navigation/navigation"
 import ThemeSelect from "@/modules/theme/theme-select"
 import { useTheme } from "@/modules/theme/theme-context"
 

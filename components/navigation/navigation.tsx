@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Theme } from "../modules/theme/theme-select"
+import { Theme } from "../../modules/theme/theme-select"
+import styles from "./styles.module.css"
 
 export default function Navigation({theme}: {theme: Theme}): JSX.Element {
     return <nav>
@@ -23,6 +24,6 @@ function NavigationItem({
 }): JSX.Element {
     const pathname = usePathname()
     return <li>
-        <Link className={`link-underline ${theme === "light" ? 'dark-underline' : 'light-underline'} ${pathname === href ? "ml-1 text-slate-700 dark:text-gray-300" : ""}`} href={href}>{text}</Link>
+        <Link className={`${styles.linkUnderline} ${theme === "light" ? styles.darkUnderline : styles.lightUnderline} ${pathname === href ? "ml-1 text-slate-700 dark:text-gray-300" : ""}`} href={href}>{text}</Link>
     </li>
 }
