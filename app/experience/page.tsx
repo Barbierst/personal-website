@@ -1,6 +1,6 @@
 'use client'
 
-import ExpandButton from "@/components/expand-button"
+import ExpandButton from "@/components/expand-button/expand-button"
 import { useState } from "react"
 
 export default function Experience(): JSX.Element {

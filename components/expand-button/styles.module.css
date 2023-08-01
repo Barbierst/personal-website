@@ -1,0 +1,11 @@
+.animated {
+    transition: all 500ms;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+.hidden {
+    opacity: 0%;
+}
