@@ -11,7 +11,7 @@ export default function Experience(): JSX.Element {
             start: "october 2021", 
             end: "present", 
             highlights: [
-                "Software Development company that supports Your.Online in there efforts to improve the hosting landscape within the EU.",
+                "Software Development company that supports Your.Online in their efforts to improve the hosting landscape within the EU.",
                 "Part of an agile team within a larger and complex organization.",
                 "Development of a multi-tenant NextJS based shop.",
                 "Development of an order system with a complex product structure in Laravel.",
