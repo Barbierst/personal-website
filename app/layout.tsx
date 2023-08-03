@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import LayoutWrap from '@/components/layout-wrap'
+import { ThemeProvider } from '@/modules/theme/theme-context'
 
 export const metadata: Metadata = {
   title: 'Tim Barbiers',
@@ -15,9 +16,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <LayoutWrap>
-        {children}
-      </LayoutWrap>
+      <ThemeProvider>
+        <LayoutWrap>
+          {children}
+        </LayoutWrap>
+      </ThemeProvider>
     </html>
   )
 }
