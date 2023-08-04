@@ -24,8 +24,8 @@ export default function Experience(): JSX.Element {
             end: "september 2021", 
             highlights: [
                 "E-commerce company that sells fully customizable products.",
-                "Development a fully custom CMS and CRM (Laravel and Angular).",
-                "Development of product design tool (Laravel and Svelte).",
+                "Development of a fully custom CMS and CRM (Laravel and Angular).",
+                "Development of a product design tool (Laravel and Svelte).",
                 "Development of API connections between several shops (Python).",
                 "Development of the Product Management System (PHP).",
             ]
@@ -48,7 +48,7 @@ export default function Experience(): JSX.Element {
             end: "august 2019",
              highlights: [
                 "Postal company with over 17.000 employees acquired by PostNL.",
-                "Responsible the data gathering for online recruitment and the e-commerce efforts.",
+                "Responsible the data gathering for online recruitment and e-commerce efforts.",
                 "Helped in the transition from local recruitment to a more centralized approach."
              ]
         },
