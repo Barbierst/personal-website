@@ -15,7 +15,7 @@ export default function LayoutWrap({
   }): JSX.Element {
     const {theme} = useTheme()
     return <body className={`${inter.className} ${theme === "dark" ? "dark" : ""}`}>
-    <div className='transition-colors flex w-screen min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-white'>
+    <div className='transition-colors flex w-screen min-h-screen bg-white dark:bg-stone-900 text-stone-900 dark:text-white'>
       <ThemeSelect className='fixed -left-12 bottom-24 -rotate-90 space-x-4 '/>
       <div className='w-full mx-10 my-8 pl-4 lg:pl-8 border-l-2 lg:flex'>
         <header>

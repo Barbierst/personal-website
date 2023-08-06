@@ -94,7 +94,7 @@ function ExperienceBlock({
             <ExpandButton expanded={expanded} onClick={() => setExpanded(!expanded)}/>
         </span>
         {expanded && highlights.length > 1 && <ul>
-            {highlights.map((highlight, index) => <li key={index} className="py-1 text-xs text-slate-700 dark:text-gray-200">- {highlight}</li>)}
+            {highlights.map((highlight, index) => <li key={index} className="py-1 text-xs text-stone-700 dark:text-gray-200">- {highlight}</li>)}
         </ul>}
     </li>
 }

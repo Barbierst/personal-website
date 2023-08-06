@@ -24,6 +24,6 @@ function NavigationItem({
 }): JSX.Element {
     const pathname = usePathname()
     return <li>
-        <Link className={`${styles.linkUnderline} ${theme === "light" ? styles.darkUnderline : styles.lightUnderline} ${pathname === href ? "ml-1 text-slate-700 dark:text-gray-300" : ""}`} href={href}>{text}</Link>
+        <Link className={`${styles.linkUnderline} ${theme === "light" ? styles.darkUnderline : styles.lightUnderline} ${pathname === href ? "ml-1 text-stone-700 dark:text-gray-300" : ""}`} href={href}>{text}</Link>
     </li>
 }
