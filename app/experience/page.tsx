@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import ExpandButton from "@/components/expand-button/expand-button"
 import { useState } from "react"
@@ -46,11 +46,11 @@ export default function Experience(): JSX.Element {
             role: "Marketing Intelligence Analist", 
             start: "febraury 2019", 
             end: "august 2019",
-             highlights: [
+            highlights: [
                 "Postal company with over 17.000 employees acquired by PostNL.",
                 "Responsible the data gathering for online recruitment and e-commerce efforts.",
                 "Helped in the transition from local recruitment to a more centralized approach."
-             ]
+            ]
         },
         {
             employer: "Euroforum", 
