@@ -27,7 +27,7 @@ export function ExperienceBlock({
       <ExpandButton expanded={expanded} onClick={() => setExpanded(!expanded)}/>
     </span>
     <ul className={`list-disc pl-3 transition-all overflow-hidden ${expanded ? "max-h-48": "max-h-0"}`}>
-        {highlights.map((highlight, index) => <li key={index} className="py-1 text-xs text-stone-700 dark:text-gray-200">{highlight}</li>)}
+      {highlights.map((highlight, index) => <li key={index} className="py-1 text-xs text-stone-700 dark:text-gray-200">{highlight}</li>)}
     </ul>
   </li>
 }
