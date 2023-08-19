@@ -5,7 +5,7 @@ import styles from "./styles.module.css"
 
 export default function Navigation({theme}: {theme: Theme}): JSX.Element {
   return <nav>
-    <ul className="text-xl lg:flex lg:flex-row lg:space-x-8 lg:text-2xl">
+    <ul className="text-xl xl:flex xl:flex-row xl:space-x-8 xl:text-xl">
       <NavigationItem href="/" text="About" theme={theme}/>
       <NavigationItem href="/experience" text="Experience" theme={theme}/>
       <NavigationItem href="/contact" text="Contact" theme={theme}/>

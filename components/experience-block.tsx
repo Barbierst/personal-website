@@ -22,7 +22,7 @@ export function ExperienceBlock({
 
   return <li className="mb-6 pb-4 border-b-2">
     <p>{employer} | {role}</p>
-    <span className="text-sm lg:text-lg">
+    <span className="text-sm xl:text-lg">
       <span className="flex justify-between">
         <p>{start} - {end}</p>
         <ExpandButton expanded={expanded} onClick={() => setExpanded(!expanded)}/>
