@@ -1,7 +1,4 @@
-"use client"
-
-import ExpandButton from "@/components/expand-button/expand-button"
-import { useState } from "react"
+import { Experience, ExperienceBlock } from "../../components/experience-block"
 
 export default function Experience(): JSX.Element {
   const experiences: Experience[] = [
@@ -68,33 +65,4 @@ export default function Experience(): JSX.Element {
   return <ul>
     {experiences.map((experience) => <ExperienceBlock key={experience.employer} {...experience}/>)}
   </ul>
-}
-
-interface Experience {
-    employer: string
-    role: string
-    start: string
-    end: string
-    highlights: string[]
-}
-
-function ExperienceBlock({
-  employer,
-  role,
-  start,
-  end,
-  highlights
-}: Experience): JSX.Element {
-  const [expanded, setExpanded] = useState<boolean>(false)
-
-  return <li className="mb-6 pb-4 text-xs border-b-2">
-    <p className="text-base">{employer} | {role}</p>
-    <span className="flex justify-between">
-      <p>{start} - {end}</p>
-      <ExpandButton expanded={expanded} onClick={() => setExpanded(!expanded)}/>
-    </span>
-    {expanded && highlights.length > 1 && <ul>
-      {highlights.map((highlight, index) => <li key={index} className="py-1 text-xs text-stone-700 dark:text-gray-200">- {highlight}</li>)}
-    </ul>}
-  </li>
 }

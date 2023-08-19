@@ -1,4 +1,3 @@
-"use client"
 import styles from "./styles.module.css"
 import { useTheme } from "@/modules/theme/theme-context"
 
