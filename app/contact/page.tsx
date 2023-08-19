@@ -30,7 +30,7 @@ function SocialLink({
   newTab,
 }: SocialLinkProps): JSX.Element {
   return <a className="flex" href={href} target={newTab? "blank" : ""}>
-    <FontAwesomeIcon className="w-5 mr-2 mb-2" icon={icon}/>
+    <FontAwesomeIcon className="w-5 lg:w-8 mr-4 mb-4" icon={icon}/>
     <span>{text}</span>
   </a>
 }
