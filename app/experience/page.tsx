@@ -45,7 +45,7 @@ export default function Experience(): JSX.Element {
       end: "august 2019",
       highlights: [
         "Postal company with over 17.000 employees acquired by PostNL.",
-        "Responsible the data gathering for online recruitment and e-commerce efforts.",
+        "Responsible for the data gathering for online recruitment and e-commerce efforts.",
         "Helped in the transition from local recruitment to a more centralized approach."
       ]
     },
