@@ -23,7 +23,7 @@ export default function LayoutWrap({
           <Navigation theme={theme}/>
         </header>
         <main className='xl:h-full flex justify-center mt-12 xl:mt-48 2xl:mt-0 2xl:items-center'>
-          <div className="xl:w-1/2 2xl:w-1/3 text-base xl:text-xl 2xl:text-2xl">
+          <div className="xl:w-1/2 2xl:w-1/3 text-base xl:text-lg">
             {children}
           </div>
         </main>
