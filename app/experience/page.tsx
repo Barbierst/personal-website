@@ -7,8 +7,8 @@ export default async function Experience(): Promise<JSX.Element> {
 
   return <ul className="list-none">
     {res.data.map((experience) => <span key={experience.attributes.company}>
-        <ExperienceBlock {...experience.attributes}/>
-      </span>
-      )}
+      <ExperienceBlock {...experience.attributes}/>
+    </span>
+    )}
   </ul>
 }
